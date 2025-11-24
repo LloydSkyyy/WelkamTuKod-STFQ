@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Profesional</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#gambar">Gambar</a>
+      <a href="#about">Daftar</a>
+      <a href="#services">Tabel</a>
+      <a href="#contact">Formulir</a>
+    </nav>
+  </header>
+
+  <main>
+   <!-- Home -->
+<section id="home" class="content home-hero">
+  <div class="hero-overlay">
+    <h2>🏠 Selamat Datang</h2>
+    <p>Website sederhana dengan navigasi ke berbagai konten.</p>
+    <p class="tagline">💻 Inovasi – Teknologi – Masa Depan 🚀</p>
+    <a href="#about" class="btn-cta">Mulai Jelajahi</a>
+  </div>
+</section>
+
+    </section>
+
+   <!-- Gambar -->
+<section id="gambar" class="content">
+  <h2>🖼️ Gambar dari Internet</h2>
+
+  <div class="gambar-container">
+    <img src="kucinglucu.jpg" alt="Kucing lucu si putih">
+    <div class="caption">Kucing lucu Si Putih 🐾</div>
+  </div>
+
+  <a href="https://www.alodokter.com/inilah-cara-merawat-anak-kucing-yang-tepat" target="_blank">
+    <div class="gambar-container">
+      <img 
+        src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1649220676/attached_image/merawat-anak-kucing-alodokter.jpg" 
+        alt="Anak kucing lucu menggemaskan">
+      <div class="caption">Anak kucing menggemaskan 🐱</div>
+    </div>
+  </a>
+</section>
+
+    </section>
+
+    <!-- Daftar -->
+    <section id="about" class="content">
+      <h2>📌 Daftar Hobi (Ordered List)</h2>
+      <ol>
+        <li>Membaca</li>
+        <li>Berenang</li>
+        <li>Ngoding</li>
+        <li>Main basket</li>
+      </ol>
+      <br>
+      <h2>🍴 Daftar Makanan Favorit (Unordered List)</h2>
+      <ul>
+        <li>Nasi Goreng</li>
+        <li>Sambel terasi emak(paling enak no debat)</li>
+        <li>Mie Ayam</li>
+        <li>Semua masakan emak</li>
+      </ul>
+    </section>
+
+    <!-- Tabel -->
+    <section id="services" class="content">
+      <h2>📊 Tabel Sederhana</h2>
+      <table>
+        <tr>
+          <th>No</th>
+          <th>Nama Barang</th>
+          <th>Harga</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Mie ayam</td>
+          <td>5000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Nasi goreng</td>
+          <td>15000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Baso aci</td>
+          <td>7000</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Formulir -->
+    <section id="contact" class="content">
+      <div class="form-container">
+        <h2>Form Pendaftaran</h2>
+        <form action="#" method="post">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Kata Sandi:</label>
+          <input type="password" id="password" name="password" required>
+
+          <label for="gender">Jenis Kelamin:</label>
+          <select id="gender" name="gender" required>
+            <option value="">-- Pilih Jenis Kelamin --</option>
+            <option value="laki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+
+          <<label>Status:</label>
+<div class="radio-group">
+  <label class="radio-card">
+    <input type="radio" name="status" value="nikah" required>
+    <span>Nikah</span>
+  </label>
+
+  <label class="radio-card">
+    <input type="radio" name="status" value="belum">
+    <span>Belum Nikah</span>
+  </label>
+
+  <label class="radio-card">
+    <input type="radio" name="status" value="cerai">
+    <span>Cerai</span>
+  </label>
+</div>
+
+
+          <label for="alamat">Alamat:</label>
+          <textarea id="alamat" name="alamat" rows="3" required></textarea>
+
+          <button type="submit">Daftar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Professional Website. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

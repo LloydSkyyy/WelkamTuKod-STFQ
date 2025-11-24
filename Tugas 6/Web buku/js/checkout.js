@@ -1,0 +1,76 @@
+// Sama seperti detail.html, ambil data produk
+const products = {
+  aldebaran: {
+    title: "Aldebaran",
+    price: "Rp.95.700",
+    img: "Asset/Aldebaran.jpg",
+  },
+  theuntold: {
+    title: "The Untold Islamic History",
+    price: "Rp.117.999",
+    img: "Asset/The Untold.jpg",
+  },
+  kisahnabi: {
+    title: "Belajar Akhlaq 25 Nabi&Rasul",
+    price: "Rp.57.999",
+    img: "Asset/Kisah Nabi.jpg",
+  },
+  howto: {
+    title: "How To Win Friends & Influence People",
+    price: "Rp.120.900",
+    img: "Asset/How to.jpg",
+  },
+  think: {
+    title: "Think and Grow Rich",
+    price: "Rp.117.999",
+    img: "Asset/Think.jpg",
+  },
+  thenext: {
+    title: "The Next Steve Jobs 15 Anak Genius di Bidang TI",
+    price: "Rp.57.999",
+    img: "Asset/The next.jpg",
+  },
+  talimmutaalim: {
+    title: "Adab Sebelum Ilmu - Ta'lim Muta'alim",
+    price: "Rp.35.999",
+    img: "Asset/Ta'lim muta'alim.jpg",
+  },
+  atomic: {
+    title: "Self Improvement - Atomic Habits",
+    price: "Rp.117.999",
+    img: "Asset/Atomic.jpg",
+  },
+};
+
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+const checkoutBox = document.getElementById("checkout-box");
+
+if (id && products[id]) {
+  const p = products[id];
+  checkoutBox.innerHTML = `
+        <h2>Checkout Produk</h2>
+        <img src="${p.img}" alt="${p.title}">
+        <h3>${p.title}</h3>
+        <p><strong>Harga:</strong> ${p.price}</p>
+        
+        <form>
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" required>
+          </div>
+          <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="hp">No. HP / WhatsApp</label>
+            <input type="text" id="hp" name="hp" required>
+          </div>
+          <button type="submit" class="btn">Konfirmasi Pesanan</button>
+        </form>
+      `;
+} else {
+  checkoutBox.innerHTML = "<h2>Produk Sedang Diprores</h2>";
+}

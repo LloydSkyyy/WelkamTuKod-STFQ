@@ -1,0 +1,33 @@
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6)),
+    url("https://i.pinimg.com/1200x/29/46/63/294663312a46c6b9459594a0d5466397.jpg")
+      center/cover no-repeat;
+  color: white;
+  padding: 100px 0;
+}
+
+.img-fluid {
+  width: 4rem !important;
+  height: 3rem !important;
+  background-color: white !important;
+  border-radius: 10px;
+}
+
+.feature-box {
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo-toko {
+  width: 10rem !important;
+  height: 10rem !important;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  border-radius: 50% !important;
+  background: #efefef !important;
+}

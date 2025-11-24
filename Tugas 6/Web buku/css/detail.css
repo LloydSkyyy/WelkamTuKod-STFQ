@@ -1,0 +1,51 @@
+/* ===========================
+   Detail Produk
+=========================== */
+.detail-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+}
+
+.detail-container img {
+  max-width: 250px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.detail-container h2 {
+  color: #222 !important;
+  font-size: 22px;
+  margin-bottom: 10px !important;
+}
+
+.detail-container p {
+  color: #333 !important;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.detail-container p strong {
+  color: #0066cc !important;
+}
+
+.btn {
+  background: #0d6efd !important;
+  color: #fff !important;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #094ab2 !important;
+}

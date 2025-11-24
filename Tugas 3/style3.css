@@ -1,0 +1,298 @@
+header {
+  background: #310931;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 100px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  min-height: 70vh;
+}
+
+.content {
+  display: none;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.content.active {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #168cdb;
+}
+
+.form-container label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.contact-info {
+  margin: 0px 0;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: #31032a;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  padding: 10px 15px;
+  background: #0d6efd;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.social-links a:hover {
+  background: #0b5ed7;
+}
+
+.map-container {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.radio-card {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button {
+  padding: 12px;
+  background: #139ad8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0b5ed7;
+}
+
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Fix supaya Home benar-benar ketengah */
+#home.content {
+  position: relative; /* override biar ga absolute */
+  height: 100vh;      /* penuh tinggi layar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gambar {
+  text-align: center; /* biar isi section center */
+}
+
+.gambar-container {
+  display: inline-block;   /* biar bisa center di dalam text-align center */
+  margin: 15px;
+  text-align: center;      /* biar caption juga center */
+}
+
+.gambar-container img {
+  max-width: 700px;  /* biar gak terlalu gede */
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;    /* pastiin img center */
+}
+
+.caption {
+  margin-top: 8px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 0; /* tersembunyi dulu */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0d6efd;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  margin: 5px 10px;
+  border-radius: 8px;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Tombol buka */
+#open-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  background: #0d6efd;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Tombol tutup */
+#close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Tombol buka di dalam header */
+header {
+  background: #0d6efd;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Tombol sidebar */
+#open-btn {
+  position: absolute;  /* biar bisa pojok kiri */
+  left: 20px;
+  top: 20px;
+  font-size: 20px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: white;
+  color: #0d6efd;
+  cursor: pointer;
+}
+
+/* Biar nggak nutup teks h1 */
+header h1 {
+  margin: 0;
+}

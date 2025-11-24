@@ -1,0 +1,63 @@
+
+    body {
+      background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(10, 10, 30, 0.95)),
+                  url('https://i.imgur.com/7sgrsLL.png'); 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #f8f9fa;
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background-color: rgba(20, 20, 40, 0.9);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(6px);
+    }
+
+    .form-label {
+      font-weight: 500;
+    }
+
+    .form-control, .form-select {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .form-control::placeholder {
+      color: #ccc;
+    }
+
+    .btn-primary {
+      background-color: #180269;
+      border: none;
+      font-weight: bold;
+    }
+
+    .btn-primary:hover {
+      background-color: #1d03af;
+    }
+
+    .hasil {
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-align: center;
+      margin-top: 15px;
+      color: #f0f3f5;
+    }
+
+    h3 {
+      font-weight: 600;
+      color: #a890b3;
+      text-shadow: 0 0 10px rgba(13, 202, 240, 0.6);
+    }
+
+    

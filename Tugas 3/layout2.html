@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Profesional</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#gambar">Gambar</a>
+      <a href="#about">Daftar</a>
+      <a href="#services">Tabel</a>
+      <a href="#contact">Formulir</a>
+      <a href="#kontak">Contact</a>
+
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="content home-hero">
+      <div class="hero-overlay">
+        <h2> Selamat Datang</h2>
+        <p>Website sederhana dengan navigasi ke berbagai konten.</p>
+        <p class="tagline">💻 Inovasi – Teknologi – Masa Depan 🚀</p>
+        <a href="#about" class="btn-cta">Mulai Jelajahi</a>
+      </div>
+    </section>
+
+    <!-- Gambar -->
+    <section id="gambar" class="content">
+      <h2>🖼️ Gambar dari Internet</h2>
+      <div class="gambar-container">
+        <img src="kucinglucu.jpg" alt="Kucing lucu si putih">
+        <div class="caption">Kucing lucu Si Putih 🐾</div>
+      </div>
+      <a href="https://www.alodokter.com/inilah-cara-merawat-anak-kucing-yang-tepat" target="_blank">
+        <div class="gambar-container">
+          <img 
+            src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1649220676/attached_image/merawat-anak-kucing-alodokter.jpg" 
+            alt="Anak kucing lucu menggemaskan">
+          <div class="caption">Anak kucing menggemaskan 🐱</div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Daftar -->
+    <section id="about" class="content">
+      <h2>📌 Daftar Hobi</h2>
+      <ol>
+        <li>Membaca</li>
+        <li>Berenang</li>
+        <li>Ngoding</li>
+        <li>Main basket</li>
+      </ol>
+      <br>
+      <h2>🍴 Daftar Makanan Favorit</h2>
+      <ul>
+        <li>Nasi Goreng</li>
+        <li>Sambel terasi emak (paling enak no debat)</li>
+        <li>Mie Ayam</li>
+        <li>Semua masakan emak</li>
+      </ul>
+    </section>
+
+    <!-- Tabel -->
+    <section id="services" class="content">
+      <h2>📊 Tabel Sederhana</h2>
+      <table>
+        <tr>
+          <th>No</th>
+          <th>Nama Barang</th>
+          <th>Harga</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Mie ayam</td>
+          <td>5000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Nasi goreng</td>
+          <td>15000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Baso aci</td>
+          <td>7000</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Formulir -->
+    <section id="contact" class="content">
+      <div class="form-container">
+        <h2>Form Pendaftaran</h2>
+        <form action="#" method="post">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Kata Sandi:</label>
+          <input type="password" id="password" name="password" required>
+
+          <label for="gender">Jenis Kelamin:</label>
+          <select id="gender" name="gender" required>
+            <option value="">-- Pilih Jenis Kelamin --</option>
+            <option value="laki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+
+          <label>Status:</label>
+          <div class="radio-group">
+            <label class="radio-card">
+              <input type="radio" name="status" value="nikah" required>
+              <span>Nikah</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="status" value="belum">
+              <span>Belum Nikah</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="status" value="cerai">
+              <span>Cerai</span>
+            </label>
+          </div>
+
+          <label for="alamat">Alamat:</label>
+          <textarea id="alamat" name="alamat" rows="3" required></textarea>
+
+          <button type="submit">Daftar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+<!-- Contact Info -->
+<section id="kontak" class="content">
+  <h2>📞 Hubungi Saya</h2>
+  <div class="contact-info">
+    <p><strong>Alamat:</strong> Jln. Soekarno Hatta No. 123, Bandung</p>
+    <p><strong>Telepon:</strong> <a href="tel:+6281234567890">+62 812-3456-7890</a></p>
+    <p><strong>Email:</strong> <a href="mailto:sabiq@example.com">sabiq@yaah.com</a></p>
+  </div>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/" target="_blank">🌐 Instagram</a>
+    <a href="https://github.com/" target="_blank">💻 GitHub</a>
+  </div>
+
+  <!-- Google Maps Embed -->
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.752259425833!2d106.82718351527178!3d-6.175394995529423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c57f55f2ff%3A0x1b40f1b1a82b0b7!2sMonas!5e0!3m2!1sid!2sid!4v1616063776954!5m2!1sid!2sid" 
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+  <footer>
+  <p>&copy; 2025 My Professional Website. All Rights Reserved.</p>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/" target="_blank">📷</a>
+    <a href="https://github.com/" target="_blank">💻</a>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
